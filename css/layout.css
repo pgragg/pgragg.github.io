@@ -66,17 +66,16 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	width:30%;
 	height:100%;
 	float:left;
+	padding: 2% 0 2%;
 
 }
 .left_col {
 	margin: 0 3% 0 1%;
 	clear:left;
-	border-right: 1px solid #ddd;
 }
 
 .middle_col {
 	margin: 0 3% 0 0;
-	border-right: 1px solid #ddd;
 
 }
 .right_col {
@@ -100,7 +99,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	clear: both;
 	text-align: center;
 	float: left;
-	background: #007ca5;
+	background: #212121;
 	color: #fff;
 	width: 100%;
 	height: 35%;
@@ -136,12 +135,26 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	line-height: 15em;
 }
 .roundbox {
-	background-color: #ddd;
 	border-radius: 3px;
 	box-shadow: 1px 11px 11px 1px #888;
-	height:95%;
-	width:95%;
+	color:white;
+	margin: 8% 0 0 5%;
+	width: 100%;
+	padding: 0;
 }
+
+.boxtitle {
+	margin: 0;
+	padding: 10% 0 0 0;
+}
+
+#rl {background-color: #e84e40; height:50%;} /* RED */
+#rm {background-color: #738ffe; height:65%;} /* BLUE */
+#rr {background-color: #2baf2b; height:50%;} /* GREEN */
+
+
+
+
 .footer {
 
 	text-align: center;
@@ -184,6 +197,26 @@ img {
 	margin-right: auto;
 
 	}
+
+.question {
+
+	width: 50%;
+	text-align: center;
+	margin: 20% 0 20% 26%;
+	font-size: 1.5em;
+	font-family: robotot, helvetica, arial;
+	line-height: 1.5em;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+
+
 @font-face {
     font-family: 'roboto'; /*a name to be used later*/
     src: url('../fonts/Roboto-Black.ttf'); /*URL to font*/

@@ -1,70 +1,54 @@
 
 
-* { margin: 0; padding: 0; width:100%;}
+* { margin: 0; padding: 0;}
 
 
 
-html, body { 
-	height:100%;
-	width:100%;
- }
-
-
+html, body { height:100%; width:100%;}
 
 body {
 	text-align: left;
 	font-size: 72.5%;
 	font-family: roboto, helvetica, arial, sans-serif;
 	color: #000;
-	background: #fff;
+	background: #bdbdbd;
+	background-color:#cfd8dc;
+	background-size:200%;
+	background-attachment: fixed;
+	background-position: center;
 	margin: 0;
 	border: 0;
 	padding: 0; }
 
 
-
 a { color:#007ca5; text-decoration:none; outline: none; }
-
 a:visited { color:#666; }
-
 a:active { color:#999; }
 
 
-
 .page_divider a { color:#fff; text-decoration: none; outline: none; }
-
 .page_divider a:hover { color:#fff; text-decoration: underline; outline: none; }
-
 .page_divider a:visited { color:#fff; }
-
 .page_divider a:active { color:#fff; }
-
 #divider-text {margin: 6.8% 0px 0px;}
 
 img, a img { border-style: none; }
 
-.logo {
-	font-size: 6em;
-}
+.logo {font-size: 6em;}
+
 
 h1, .h1 { font-size: 4.4em; }
-
 h2, .h2 { font-size: 2em; } /* 20pt */
-
 h3, .h3 { font-size: 1.8em; } /* 18pt */
-
 h4, .h4 { font-size: 1.6em; } /* 16pt */
-
 h5, .h5 { font-size: 1.4em; } /* 14pt */
-
 h6, .h6 { font-size: 1.1em; } /* 11pt */
-
 .small { font-size: .9em; }
 
 .clearer { clear:both; }
 .col {
 	width:30%;
-	height:100%;
+	height:90%;
 	float:left;
 	padding: 2% 0 2%;
 
@@ -109,6 +93,9 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	font-family: robotot, helvetica, arial, sans-serif;
 	}
 
+.glyphicon {
+	margin: 15% 0 0 0;
+	}
 
 .greyscale {
 
@@ -122,7 +109,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 .greyout {
 	background-color: #000;
 	filter: rgba(0 0 0 99);
-    opacity:.6;
+    opacity:.75;
 }
 
 #hero-image{
@@ -136,10 +123,11 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 }
 .roundbox {
 	border-radius: 3px;
-	box-shadow: 1px 11px 11px 1px #888;
-	color:white;
+	box-shadow: 5px 5px 5px 2px #455a64;
+	color:#212121;
 	margin: 8% 0 0 5%;
 	width: 100%;
+	height:100%;
 	padding: 0;
 }
 
@@ -148,9 +136,9 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	padding: 10% 0 0 0;
 }
 
-#rl {background-color: #e84e40; height:50%;} /* RED */
-#rm {background-color: #738ffe; height:65%;} /* BLUE */
-#rr {background-color: #2baf2b; height:50%;} /* GREEN */
+#rl {background-color: #e84e40; } /* RED */
+#rm {background-color: #ffc107;} /* BLUE */
+#rr {background-color: #738ffe;  } /* YELLOW */
 
 
 
@@ -161,7 +149,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	background: #eceae1;
 	color: #000;
 	width: 100%;
-	margin: 0 0 0 0;
+	margin: 7% 0 0 0;
 	border: 0;
 	padding: 10px;
 	overflow: hidden;
@@ -187,15 +175,15 @@ img {
 
 
 .wrapper {
-	background-image: url('../images/pieces.jpg');
+	background-image: url('../images/laptop.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	text-align: center;
 	width: 100%;
-	height:100%;
+	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
-
+	background-size: 100%;
 	}
 
 .question {
@@ -207,15 +195,6 @@ img {
 	font-family: robotot, helvetica, arial;
 	line-height: 1.5em;
 }
-
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
-}
-
 
 @font-face {
     font-family: 'roboto'; /*a name to be used later*/
@@ -232,4 +211,77 @@ img {
 @font-face {
     font-family: 'robotom'; /*a name to be used later*/
     src: url('../fonts/Roboto-Medium.ttf'); /*URL to font*/
+
+}
+@font-face {
+    font-family: 'robotor'; /*a name to be used later*/
+    src: url('../fonts/Roboto-Regular.ttf'); /*URL to font*/
+
+}
+    /* Media Query Time! */
+
+
+
+@media all and (max-width:700px) {
+    .roundbox {
+	    border-radius: 3px;
+		box-shadow: 0px 0px 0px 0px #263238;
+		color: white;
+		margin: 8% 0 0 12%;
+		width: 80%;
+		height:100%;
+		padding: 0;
+	}
+	.col {
+		height:64%;
+		width:95%;
+		clear:both;
+	}
+
+	#rl, #rm, #rr {
+		height:100%;
+	}
+	#rl {
+		margin: 8% 0 0 11%;
+	}
+	.footer {
+		visibility:hidden;
+	}
+	.logo {
+	font-size: 5em;
+	}
+	#divider-text {
+	margin: 11% 0px 0px;
+	font-size: 2.5em;
+	}
+	#herotext {line-height: 9em;}
+}	
+
+@media all and (max-width:900px) {
+    
+}
+
+@media all and (min-width:1200px) {
+	html, body, .wrapper { height:1200px; width:1200px; position:center;}
+	.col {height:400px;}
+	div .page_divider {height:200px;}
+}
+/*
+@media all and (min-width:700px) {
+    body {
+        background: red;
+        color: white;
+    }
+}
+@media all and (min-width:500px) {
+    body {
+        background: blue;
+        font-family: serif;
+    }
+}
+@media all and (min-width:700px) {
+    body {
+        background: red;
+        color: white;
+    }
 }

@@ -4,7 +4,7 @@
 
 
 
-html, body { height:100%; width:100%;}
+html, body { height:100%; width:100%; margin: 0 auto;}
 
 body {
 	text-align: left;
@@ -109,7 +109,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 .greyout {
 	background-color: #000;
 	filter: rgba(0 0 0 99);
-    opacity:.75;
+    opacity:.5;
 }
 
 #hero-image{
@@ -123,7 +123,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 }
 .roundbox {
 	border-radius: 3px;
-	box-shadow: 5px 5px 5px 2px #455a64;
+	/*box-shadow: 5px 5px 5px 2px #455a64;*/
 	color:#212121;
 	margin: 8% 0 0 5%;
 	width: 100%;
@@ -175,7 +175,7 @@ img {
 
 
 .wrapper {
-	background-image: url('../images/laptop.jpg');
+	background-image: url('../images/laptop3.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	text-align: center;
@@ -222,7 +222,7 @@ img {
 
 
 
-@media all and (max-width:700px) {
+@media all and (max-width:650px), only screen {
     .roundbox {
 	    border-radius: 3px;
 		box-shadow: 0px 0px 0px 0px #263238;
@@ -233,7 +233,7 @@ img {
 		padding: 0;
 	}
 	.col {
-		height:64%;
+		height: 100%;
 		width:95%;
 		clear:both;
 	}
@@ -250,13 +250,18 @@ img {
 	.logo {
 	font-size: 5em;
 	}
+	.page_divider {
+		height: 200px;
+	}
 	#divider-text {
 	margin: 11% 0px 0px;
 	font-size: 2.5em;
 	}
 	#herotext {line-height: 9em;}
+	.question {
+		margin: 12% 0 20% 26%;
+		font-size: 2em;}
 }	
-
 @media all and (max-width:900px) {
     
 }

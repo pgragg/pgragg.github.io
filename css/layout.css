@@ -30,7 +30,11 @@ a:active { color:#999; }
 .page_divider a:hover { color:#fff; text-decoration: underline; outline: none; }
 .page_divider a:visited { color:#fff; }
 .page_divider a:active { color:#fff; }
-#divider-text {margin: 5% 0px 0px 0px;}
+
+
+#divider-text {
+
+}
 
 img, a img { border-style: none; }
 
@@ -87,11 +91,12 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	background: #212121;
 	color: #fff;
 	width: 100%;
-	height: 35%;
+	height: 100%;
 	margin: 0;
 	border: 0;
-	overflow: hidden;
 	font-family: robotot, helvetica, arial, sans-serif;
+	padding: 5% 0 5% 0;
+
 	}
 .row {
 	background-color:white;
@@ -205,7 +210,7 @@ img {
 	font-family: robotot, helvetica, arial;
 	line-height: 1.5em;
 	height:200px;
-	
+
 }
 
 @font-face {
@@ -268,12 +273,6 @@ img {
 	}
 	.logo {
 	font-size: 5em;
-	}
-	.page_divider {
-		height: 200px;
-	}
-	#divider-text {
-		margin: 14% 0px 0px;
 	}
 	#herotext {line-height: 9em;}
 	.question {

@@ -30,7 +30,7 @@ a:active { color:#999; }
 .page_divider a:hover { color:#fff; text-decoration: underline; outline: none; }
 .page_divider a:visited { color:#fff; }
 .page_divider a:active { color:#fff; }
-#divider-text {margin: 6.8% 0px 0px;}
+#divider-text {margin: 5% 0px 0px 0px;}
 
 img, a img { border-style: none; }
 
@@ -51,6 +51,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	height:90%;
 	float:left;
 	padding: 2% 0 2%;
+	clear:none;
 
 }
 .left_col {
@@ -92,6 +93,10 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 	overflow: hidden;
 	font-family: robotot, helvetica, arial, sans-serif;
 	}
+.row {
+	background-color:white;
+}
+
 
 .glyphicon {
 	margin: 15% 0 0 0;
@@ -173,17 +178,22 @@ img {
 
 }
 
-
-.wrapper {
+.background {
 	background-image: url('../images/laptop3.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	text-align: center;
-	width: 100%;
-	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	background-size: 100%;
+}
+
+.wrapper {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	}
 
 .question {
@@ -194,6 +204,8 @@ img {
 	font-size: 1.5em;
 	font-family: robotot, helvetica, arial;
 	line-height: 1.5em;
+	height:200px;
+	
 }
 
 @font-face {
@@ -220,9 +232,12 @@ img {
 }
     /* Media Query Time! */
 
+@media all and (max-height:650px) {
+	
 
+}
 
-@media all and (max-width:650px), only screen {
+@media all and (max-width:650px) {
     .roundbox {
 	    border-radius: 3px;
 		box-shadow: 0px 0px 0px 0px #263238;
@@ -236,6 +251,7 @@ img {
 		height: 100%;
 		width:95%;
 		clear:both;
+		font-size: 0.9em;
 	}
 
 	#rl, #rm, #rr {
@@ -243,6 +259,9 @@ img {
 	}
 	#rl {
 		margin: 8% 0 0 11%;
+	}
+	.header {
+		height: 100%;
 	}
 	.footer {
 		visibility:hidden;
@@ -254,8 +273,7 @@ img {
 		height: 200px;
 	}
 	#divider-text {
-	margin: 11% 0px 0px;
-	font-size: 2.5em;
+		margin: 14% 0px 0px;
 	}
 	#herotext {line-height: 9em;}
 	.question {
@@ -265,13 +283,14 @@ img {
 @media all and (max-width:900px) {
     
 }
-
+/*
 @media all and (min-width:1200px) {
 	html, body, .wrapper { height:1200px; width:1200px; position:center;}
 	.col {height:400px;}
 	div .page_divider {height:200px;}
 }
-/*
+
+
 @media all and (min-width:700px) {
     body {
         background: red;

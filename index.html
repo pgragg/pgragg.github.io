@@ -3,81 +3,94 @@
 <head>
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <title>Dwight Code Academy</title>
 <link rel="stylesheet" type="text/css" href="css/layout.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="javascript/interactions.js"></script>
+<script> $(document).ready(function(){
+
+   $( "div.roundbox" ).mouseenter(function() {
+$(this).css("box-shadow", "5px 5px 2px #455a64");
+}).mouseleave(function() {
+$(this).css("box-shadow", "0px 0px 0px #455a64");
+});
+});
+</script>
 </head>
 
 <body>
+	<div class="outer-wrapper">
+		<div class="background">
+		  	<div class="wrapper">
+				<div class="filter">
+					<div class="header greyout">
 
-  	<div class="wrapper">
-		<div class="filter">
-			<div class="header greyout">
+						<br />
+						<div class="greyout" id="hero-image">
+							
+						</div>
+						<div class="greyscale" id="herotext"> 
+							<span class="logo">Dwight Code Academy </span>
+						</div></div>
 
-				<br />
-				<div class="greyout" id="hero-image">
-					
+
+					<div class="page_divider">
+						<div id="divider-text"> <h2>Learn to create </h2><br><h2>functional code</h2> </div> 
+					</div>
+
+					<div class="row">
+						<div class="col left_col">
+							<div id = "rl" class="roundbox"> 
+								<h3 class = "boxtitle"> After School </h3> 
+								<div class="glyphicon"> <img src="glyphicons/glyphicons_351_book_open.png"/></div>
+								<div class="question"> 
+									<p> Why not spend your after school time learning to create something awesome? <p> 
+								</div> 
+							</div>
+						</div>
+						<div  class="col middle_col">
+							<div id="rm" class="roundbox">
+								<h3 class = "boxtitle"> Front End Development </h3> 
+								<div class="glyphicon"> <img src="glyphicons/glyphicons_060_compass.png"/></div>
+								<div class="question"> 
+									<p> Design the front end of a website, and create something like you see here!   <p> 
+								</div> 
+							</div>
+						</div>
+						<div class="col right_col">
+							<div id="rr" class="roundbox">
+								<h3 class = "boxtitle"> Back End Development </h3> 
+								<div class="glyphicon"> <img src="glyphicons/glyphicons_463_server.png"/></div>
+								<div class="question"> 
+									<p>Solve problems and become known on the internet as a developer! <p> 
+								</div> 
+
+							</div>
+						</div>
+						<br class="clearer greyout" />
+						<div class="footer">
+
+
+
+							<span class="small">
+								<br />
+								pgragg@dwight.edu
+
+								<br />
+
+							</span>
+
+
+
+						</div>
+					</div>
 				</div>
-				<div class="greyscale" id="herotext"> 
-					<span class="logo">Dwight Code Academy </span>
-				</div></div>
-
-
-			<div class="page_divider">
-				<h2 id="divider-text">Learn to create functional code</h2>
-			</div>
-
-			
-			<div class="col left_col">
-				<div id = "rl" class="roundbox"> 
-					<h3 class = "boxtitle"> After School </h3> 
-					<div class="glyphicon"> <img src="glyphicons/glyphicons_351_book_open.png"/></div>
-					<div class="question"> 
-						<p> Why not spend your after school time learning to create something awesome? <p> 
-					</div> 
-				</div>
-			</div>
-			<div  class="col middle_col">
-				<div id="rm" class="roundbox">
-					<h3 class = "boxtitle"> Front End Development </h3> 
-					<div class="glyphicon"> <img src="glyphicons/glyphicons_060_compass.png"/></div>
-					<div class="question"> 
-						<p> Design the front end of a website, and create something like you see here!   <p> 
-					</div> 
-				</div>
-			</div>
-			<div class="col right_col">
-				<div id="rr" class="roundbox">
-					<h3 class = "boxtitle"> Back End Development </h3> 
-					<div class="glyphicon"> <img src="glyphicons/glyphicons_463_server.png"/></div>
-					<div class="question"> 
-						<p>Solve problems and become known on the internet as a developer! <p> 
-					</div> 
-
-				</div>
-			</div>
-			<br class="clearer greyout" />
-			<div class="footer">
-
-
-
-				<span class="small">
-					<br />
-					pgragg@dwight.edu
-
-					<br />
-
-				</span>
-
-
-
 			</div>
 		</div>
-
-  	</div>
-
+		<div class="background2">
+	  	</div>
+	</div> 
 </body>
 
 </html>

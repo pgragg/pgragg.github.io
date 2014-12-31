@@ -4,40 +4,65 @@
 
 <meta charset="utf-8" />
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<title>Dwight Code Academy - HTML, CSS, and JavaScript</title>
+<title>Dwight Code Academy</title>
+	<meta name="author" content="Piper Gragg">
 <link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/sizing.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="javascript/interactions.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<div class="outer-wrapper">
-		<div class="background">
-		  	<div class="wrapper">
-				<div class="page">
-					<div class="row">
-						<div class="row">
-						<div class="col left_col">
-						</div>
-						<div  class="col middle_col">
-							<div>
-								<a href="index.html">
-								<button class = "boxtitle"> Go back </h3> 
-								<div class="question"> 
-									<p> This site is still in beta! <p> 
-								</div> 
-								</a>
-							</div>
-						</div>
-						<div class="col right_col">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="background2">
-	  	</div>
-	</div> 
-</body>
+	<header id="header" class="inner"><h1><a href="/">Dwight Code Academy</a></h1>
+<span class="tagline">We Speak Computer</span>
+<nav id="main-nav"><ul class="main-nav">
+	<li><a href="front.html">Web Design</a></li>
+	<li><a href="back.html">Code Challenges</a></li>
+	<li><a href="tools.html">Tools</a></li>
+</ul>
+</nav>  
+</header>
 
+	<div id="content" class="inner">
+
+
+      <article class="post">
+	<header>
+		<h2 class="title">		
+			<a href="tools.html">Learning Code: A Roadmap</a>
+		</h2>
+	</header>
+	<center>
+	<div class="entry-content">
+		<p> If you're just starting out and you want to learn the basics of web design, check out Codecademy's <a href="http://www.codecademy.com/en/tracks/web">Web Development </a>track. It will teach you <br><br><b>HTML</b>, the content language of the internet, and <br><br><b>CSS</b>, which you use to put all your content in the right place. </p> 
+		<p> <a href="http://www.codecademy.com/en/tracks/javascript">JavaScript </a> is used to make web pages more interactive. Any time you see a button that pops up, a list that drops down, it was probably made with JavaScript. It is the most commonly required language of any developer.</p>
+		<p> <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/">Bootstrap</a> is a name for standard prewritten CSS code that you can use to (more) easily make a great site. Twitter, Netflix, Paypal, and many other major companies built their sites using Bootstrap. 
+
+	</div>
+
+
+	
+	</article>
+
+
+    
+</nav>
+</div>
+	<footer id="footer" class="inner"><br>
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/hyphenator.js"></script>
+
+<script>
+  $(document).ready(function() {
+  // Make images center
+  $('p:has(img)').css('text-align', 'center');
+  });
+</script>
+
+</body>
 </html>

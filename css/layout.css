@@ -170,10 +170,10 @@ a.category {
 }
 
 #header h1 {
-    margin: 15px 0 25px;
+    margin: 0% 0 7% 0;
     font-family: "Raleway";
     font-weight: 100;
-    font-size: 65px;
+    font-size: 2.9em;
     letter-spacing: 0.2em;
     padding-left: 0.3em;
     line-height:1em;
@@ -204,7 +204,7 @@ a.category {
     margin-bottom: 0px;
     float: center;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 7%;
 }
 
 @media screen and (max-width: 1040px) {
@@ -481,7 +481,7 @@ article {
 }
 
 article header {
-    margin-bottom: 1.5em;
+    margin: 15% 0 0 0;
 }
 
 article h2.title {

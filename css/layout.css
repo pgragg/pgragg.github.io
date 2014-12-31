@@ -476,7 +476,7 @@ a.category {
 }
 
 article {
-    padding-top: 40px;
+    padding-top: 0px;
     position: relative;
 }
 
@@ -700,7 +700,7 @@ article .entry-content .video-container iframe,article .entry-content .video-con
 }
 
 .archives {
-    padding: 40px 0 1.5em;
+    padding: 0px 0 1.5em;
 }
 
 @media screen and (max-width: 600px) {

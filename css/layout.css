@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: "Roboto-Black","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
@@ -172,7 +172,7 @@ a.category {
 #header h1 {
     margin: 0% 0 7% 0;
     font-family: "Raleway";
-    font-weight: 300;
+    font-weight: 100;
     font-size: 2.9em;
     letter-spacing: 0.2em;
     padding-left: 0.3em;
@@ -1178,6 +1178,14 @@ figure.code .s1,.gist-highlight .s1 {
 }
 
 /* Experimental stuff */
+  @font-face {
+    font-family: Aleo-Regular;
+    src: url(fonts/Aleo-Regular.otf);
+  }
+  @font-face {
+    font-family: Roboto-Black;
+    src: url(fonts/Roboto-Black.ttf);
+  }
 
   a.hovertext {
     position: relative;

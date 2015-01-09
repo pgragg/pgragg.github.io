@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
@@ -761,9 +761,19 @@ article .entry-content .video-container iframe,article .entry-content .video-con
 }
 
 footer {
-    padding: 15px 0;
+    margin: 9% 0 0 0;
+    height: 40px;
     text-align: center;
     font-size: 0.8em;
+    background-color: grey;
+    padding: 0 0 10px 0;
+
+}
+
+footer p {
+    color: whitesmoke;
+    font-size: 155%;
+    font-family: "lato";
 }
 
 article code,article pre {
